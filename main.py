@@ -13,7 +13,7 @@ try:
     youtube = YouTube(url)
 except VideoUnavailable:
     # se o video nao estiver disponivel exibe a msg na tela
-    print(f'Video {url} is unavaialable, skipping.')
+    print(f'Video {url} is unavailable, skipping.')
 else:
     # pega o objeto streams que contem as opcoes disponiveis para download
     ytStreams = youtube.streams
